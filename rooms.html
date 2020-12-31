@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='rstyles.css'>
+    </head>
+    <body>
+        <header><div class='container'>
+            <div class='head'>
+                <img src="logohtml.jpg"style="float:left;height:80px;width:90px;border-radius:5px;">
+                <h1 style="color: white;font-family: Verdana, Geneva, Tahoma, sans-serif;"align='center'>Hotel Transylvania </h1>
+                <span class='h1'>
+                <a href="trans.html" class="button">Home</a>
+                <a href="about.html" class="button">About</a>
+                <a href="gallery.html" class="button">Attractions</a>
+                <a href="#" class="button">Fitness </a>
+                <a href="#" class="button">Tours</a></span>
+                <div class='dbo'>
+                    <span class='dbi1' >ROOMS</span>
+                    <div class='dbi2' >
+                       <a href="rooms.html" class="button">LUXURY ROOMS</a><br>
+                     <a href="prerooms.html" class="button">PREMIUM ROOMS</a><br>
+                     <a href="sd.html" class="button">SUPER DELUXE DOUBLE ROOM</a><br>
+                    </div>
+                 </div>
+                </div>   
+            <div class='imS'>
+                <img src='room_bedroom_bed_table_chair_dresser_lamps_mirrors_80352_1920x1080.jpg'style='width:100%;height:100%;'>
+                <div class='rent'>
+                    <h1>Luxury Room</h1>
+                    <h2 style='font-family:Vivaldi;color: goldenrod;'>Starting From:Rs.3850/-</h2>
+                    <p style='font-family:Vivaldi;'></p>
+    
+                </div>
+            </div>
+<div class='imS'>
+    <img src='Beautiful-Bedroom-Wallpapers-31-1920-x-1080.jpg'style='width:100%;height:100%;'>
+    <div class='rent'>
+        <h1>Luxury Room</h1>
+        <h2 style='font-family:Vivaldi;color: goldenrod;'>Starting From:Rs.3850/-</h2>
+        <p style='font-family:Vivaldi;'></p>
+
+    </div>
+</div>
+<div class='imS'>
+    <img src='b219f1e2bfa899dcd8ba4d96f084a411.jpg'style='width:100%;height:100%;'>
+    <div class='rent'>
+        <h1>Luxury Room</h1>
+        <h2 style='font-family:Vivaldi;color: goldenrod;'>Starting From:Rs.3850/-</h2>
+        <p style='font-family:Vivaldi;'></p>
+
+    </div>
+</div>
+<div class='imS'>
+    <img src='ws_Luxury_Bedroom_1920x1080.jpg'style='width:100%;height:100%;'>
+    <div class='rent'>
+        <h1>Luxury Room</h1>
+        <h2 style='font-family:Vivaldi;color: goldenrod;'>Starting From:Rs.3850/-</h2>
+        <p style='font-family:Vivaldi;'></p>
+
+    </div>
+</div>
+<div class='form'>
+    <h2 style='' align='left'>Book Now!</h2>
+    <form style=''action="/transyl.html" target="_blank" method="get">
+         <label for='checkin' >Check In</label><br>
+        <input type='date' id='checkin' name='checkin' placeholder='CHECK IN'><br>
+        <label for='checkout' >Check Out </label><br>
+        <input type='date'  id='checkout' name='checkout'><br>
+        <label for='adult' >Adult</label><br>
+        <input type='number' id='adult' name='adult' min="1" max="10" placeholder='Adult'><br>
+        <label for='child'>Child</label><br>
+        <input type='number' id='child'name='child' min='0' max='20' placeholder='Children'><br>
+        <input type='submit' value='Submit' style='margin-top:40px;'>
+    </form>
+</div>
+        </div>
+            
+            </header>
+            <script>
+                var ix=0;
+                myfunction();
+                function myfunction(){  
+                    var i;
+                    var s = document.getElementsByClassName('imS');
+                    for(i=0;i<s.length;i++){
+                      s[i].style.display='none';
+                    }
+                    ix++
+                    if(ix>s.length)
+                    {
+                        ix=1
+                    }
+                    s[ix-1].style.display='block';
+                    setTimeout(myfunction,3000);
+        
+                }
+            </script>
+            
+            <div style='background-color:rgba(223, 188, 94, 0.5);font-size:30px;font-family:Georgia;padding:20px;margin-top:0px;'>
+             <p>
+                <i>Well-furnished and designed rooms feature air-conditioning, ergonomic work area, and LED HD TV.
+                 It comes with fine curtains, safety deposit box and tea and coffee amenities. Attached bathrooms 
+                 include free toiletries and a shower with cold and hot water facilities. Guests can make use of community table, tea trolley,
+                  business center, laundry, and ironing services. The 24- hour front desk provides car rental services. The hotel features state-of-the-art meeting
+                   spaces and open-air dining space.</i>
+             </p>
+             <pre style='font-size:15px;'>
+                Breakfast : Included           RoomSize : 60 sqm
+
+                Max People : 3                 View : Mountain
+
+                Facilities : Free Wifi, Room Security
+             </pre>
+             <pre  style='font-size:20px;color:rgb(32, 31, 31)'>
+                ✓ Satellite TV      ✓King Size Bed
+
+                ✓Doctor on Call     ✓Free Wi-Fi
+
+                ✓Telephones         ✓Laundry Facility
+
+                ✓Electric Kettle    ✓Electronic Safe
+
+                ✓24 hrs hot and cold water supply
+            </pre>
+            </div> 
+            <footer>
+                <hr>
+                <h3>HOTEL TRANSLVANIYA</h3>
+                <h3>All rights are reserved(1990-2020)</h3>
+               
+                   <span><img src="twitter.png" height="40"style="float:right">
+                    <span><img src="telegram.png"height="40"style="float:right"></span> 
+                    <span><img src="linkedin.png"height="40"style="float:right"></span>  
+                    <span><img src="youtube.png"height="40"style="float:right"></span>  
+            </footer>
+                </body>
+</html>

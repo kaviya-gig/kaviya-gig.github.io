@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+.dbo{
+    position: relative;
+    display:inline-block;
+    margin-left:750px;
+   
+}
+.dbi1{
+  
+    background-color:rgba(117, 117, 117, 0.4);
+    padding:5px 40px 5px 40px;
+    cursor: pointer;
+    color: rgb(217, 230, 162);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.dbi2{
+    display:none;
+   z-index: 1;
+    background-color: rgba(68, 66, 66, 0.3); 
+    position: absolute; 
+   
+    }
+   .dbi2 a{
+        text-decoration:none;
+        
+        display: block;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:white;
+        padding:5px 48px 5px 48px;
+        
+    }
+
+ .dbo:hover .dbi2{
+      display:block;
+     
+ }
+ .dbi2 a:hover{
+     background-color: rgb(49, 48, 49);
+ }
+ .dbo:hover .dbi1{
+     background-color:rgba(0, 0, 0, 0.486);
+ }
+.h1 a{
+     text-decoration: none;
+     color: rgb(217, 230, 162);
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:20px;
+ }
+ .h1 a:hover{   
+     color:burlywood;
+ }
+ .head{
+     background-color:rgba(8, 8, 8, 0.438);
+     padding:20px;
+     position:fixed;
+     top:0;
+     left:0;
+     width:100%;
+ }
+
+.form{
+    position: absolute;
+    top:45%;
+    background-color: rgba(0, 0, 0, 0.486);
+    margin-left:10px;
+    padding:50px;
+    width:300px;
+    color: rgb(217, 230, 162);
+    border:3px solid rgb(45, 75, 6);
+}
+input{
+ width:300px;
+  padding: 12px 20px; 
+  display: inline-block;
+  border: 1px solid #daa520;
+   background-color:#0742166c;
+  border-radius: 4px;
+  color:rgb(112, 82, 5);
+  box-sizing: border-box;
+  
+}
+label{
+    font-size: 20px;
+   
+} .container{
+                position:relative;
+               margin:auto;
+            }
+         .imS{
+             animation-name:f;
+             animation-duration:1s;
+         }
+
+         
+          .rent{
+    color:white;
+    position: absolute;
+    top:70%;
+    background-color: rgba(0, 0, 0, 0.534);
+    padding:20px;
+    width:300px;
+    border-left:2px solid goldenrod;
+    float: right;
+    margin-left:1140px;
+}
+ 
+      </style>
+    </head>
+    <body >
+       <div class='container'>  <header> <div class='head'>
+            <img src="logohtml.jpg"style="float:left;height:80px;width:90px;border-radius:5px;">
+            <h1 style="color: rgb(217, 230, 162);font-family: Verdana, Geneva, Tahoma, sans-serif;"align='center'><i>Hotel Transylvania</i> </h1>
+            <span class='h1'>
+            <a href="trans.html" class="button">Home</a>
+            <a href="about.html" class="button">About</a>
+            <a href="gallery.html" class="button">Attractions</a>
+            <a href="#" class="button">Fitness </a>
+            <a href="#" class="button">Tours</a></span>
+            <div class='dbo'>
+                <span class='dbi1' >ROOMS</span>
+                <div class='dbi2' >
+                   <a href="rooms.html" class="button">LUXURY ROOMS</a><br>
+                 <a href="rooms.html" class="button">PREMIUM ROOMS</a><br>
+                 <a href="sd.html" class="button">SUPER DELUXE DOUBLE ROOM</a><br>
+                </div>
+             </div> </div> </header> 
+            <div class='imS'>
+                <img src='wallpaperflare.com_wallpaper.jpg'style='width:100%;height:100%;'>
+               
+            </div>
+<div class='imS'>
+    <img src='fantasy-forest-background-full-hd-1080p-20386.jpg'style='width:100%;height:100%;'>
+    
+</div>
+<div class='imS'>
+    <img src='5-star-premium-forest-villa-hafling.jpg'style='width:100%;height:100%;'>
+   
+</div>
+<div class='imS'>
+    <img src='temple-in-the-forest-41626-1920x1080.jpg'style='width:100%;height:100%;'>
+    
+    </div>
+</div>
+        </div>
+        <div class='rent'>
+            <h1>Premium Room</h1>
+            <h2 style='font-family:Vivaldi;color: goldenrod;'>Starting From:Rs.4400/-</h2>
+            <p style='font-family:Vivaldi;'></p>
+
+        </div>
+        <div class='form'>
+            <h2 style='' align='left'>Book Now!</h2>
+            <form style=''action="/transyl.php" target="_blank" method="get">
+                 <label for='checkin' >Check In</label><br>
+                <input type='date' id='checkin' name='checkin' placeholder='CHECK IN'><br>
+                <label for='checkout' >Check Out </label><br>
+                <input type='date'  id='checkout' name='checkout'><br>
+                <label for='adult' >Adult</label><br>
+                <input type='number' id='adult' name='adult' min="1" max="10" placeholder='Adult'><br>
+                <label for='child'>Child</label><br>
+                <input type='number' id='child'name='child' min='0' max='20' placeholder='Children'><br>
+                <input type='submit' value='Submit' style='margin-top:40px;'>
+            </form>
+            </div>   
+            <script>
+                var ix=0;
+                myfunction();
+                function myfunction(){  
+                    var i;
+                    var s = document.getElementsByClassName('imS');
+                    for(i=0;i<s.length;i++){
+                      s[i].style.display='none';
+                    }
+                    ix++
+                    if(ix>s.length)
+                    {
+                        ix=1
+                    }
+                    s[ix-1].style.display='block';
+                    setTimeout(myfunction,3000);
+        
+                }
+            </script>
+            
+           
+            <div style='background-color:rgba(8, 63, 6, 0.5);font-size:30px;font-family:Georgia;padding:20px;margin-top:0px;'>
+                <pre style='font-size:15px;'>
+                    Breakfast : Included           RoomSize : 60 sqm
+    
+                    Max People : 3                 View : Mountain
+    
+                    Facilities : Free Wifi, Room Security
+                 </pre>
+             <p>
+                <i>Designed specially to pamper its guests, the Premium Room showcase a perfect blend of luxury in its accommodation with utmost security.
+                     The rooms bestow an elegant design combined with refined elegance and luxuriously appointed sleek accommodation. Tailor-made to meet the specific
+                      needs of the guests, the Premium Room offer accommodation that is more than just comfortable. From glorious touches in the room,
+                       with state- of -the art amenities and services to enhanced top-notch privacy – Premium Room ensure that the travelers feel pampered and secure.</i>
+             </p>
+             <pre  style='font-size:20px;color:white'>
+                ✓ Satellite TV      ✓King Size Bed
+
+                ✓Doctor on Call     ✓Free Wi-Fi
+
+                ✓Telephones         ✓Laundry Facility
+
+                ✓Electric Kettle    ✓Electronic Safe
+
+                ✓24 hrs hot and cold water supply
+            </pre>
+            </div> 
+            <footer>
+                <hr>
+                <h3>HOTEL TRANSLVANIYA</h3>
+                <h3>All rights are reserved(1990-2020)</h3>
+               
+                   <span><img src="twitter.png" height="40"style="float:right">
+                    <span><img src="telegram.png"height="40"style="float:right"></span> 
+                    <span><img src="linkedin.png"height="40"style="float:right"></span>  
+                    <span><img src="youtube.png"height="40"style="float:right"></span>  
+            </footer>
+                </body>
+</html>

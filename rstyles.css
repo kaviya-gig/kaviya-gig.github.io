@@ -1,0 +1,108 @@
+.dbo{
+    position: relative;
+    display:inline-block;
+    margin-left:750px;
+   
+}
+.dbi1{
+  
+    background-color:rgba(117, 117, 117, 0.4);
+    padding:5px 40px 5px 40px;
+    cursor: pointer;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.dbi2{
+    display:none;
+   z-index: 1;
+    background-color: rgba(68, 66, 66, 0.3); 
+    position: absolute; 
+   
+    }
+   .dbi2 a{
+        text-decoration:none;
+        
+        display: block;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:white;
+        padding:5px 48px 5px 48px;
+        
+    }
+
+ .dbo:hover .dbi2{
+      display:block;
+     
+ }
+ .dbi2 a:hover{
+     background-color: rgb(49, 48, 49);
+ }
+ .dbo:hover .dbi1{
+     background-color:rgba(0, 0, 0, 0.486);
+ }
+.h1 a{
+     text-decoration: none;
+     color:white;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:20px;
+ }
+ .h1 a:hover{
+     color:burlywood;
+ }
+ .head{
+     background-color:rgba(8, 8, 8, 0.438);
+     padding:20px;
+     position:fixed;
+     position:fixed;
+     top:0;
+     left:0;
+     width:100%;
+ }
+
+.form{
+  position:absolute;
+    top:35%;
+    background-color: rgba(0, 0, 0, 0.486);
+   
+    padding:50px;
+    width:300px;
+    color:whitesmoke;
+    border:3px solid goldenrod;
+}
+input{
+ width:300px;
+  padding: 12px 20px; 
+  display: inline-block;
+  border: 1px solid #daa520;
+   background-color:#daa5206c;
+  border-radius: 4px;
+  color:rgb(112, 82, 5);
+  box-sizing: border-box;
+  
+}
+label{
+    font-size: 20px;
+   
+}
+        .container{
+                position:relative;
+               margin:auto;
+            }
+         .imS{
+             animation-name:f;
+             animation-duration:1s;
+         }
+
+         
+          .rent{
+    color:white;
+    position: absolute;
+    top:50%;
+    background-color: rgba(0, 0, 0, 0.534);
+    padding:20px;
+    width:300px;
+    border-left:2px solid goldenrod;
+    float:right;
+    margin-left:1130px
+
+}

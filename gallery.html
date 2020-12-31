@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .dbo{
+    position: relative;
+    display:inline-block;
+    margin-left:750px;
+    
+}
+.dbi1{
+   
+    background-color:rgba(117, 117, 117, 0.4);
+    padding:5px 40px 5px 40px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    bottom:20px;
+}
+.dbi2{
+    display:none;
+   z-index: 1;
+    background-color: rgba(68, 66, 66, 0.3); 
+    position: absolute; 
+    bottom:20px;
+    }
+   .dbi2 a{
+        text-decoration:none;
+        display: block;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:white;
+        padding:5px 48px 5px 48px;
+        
+    }
+
+ .dbo:hover .dbi2{
+      display:block;
+     
+ }
+ .dbi2 a:hover{
+     background-color: rgb(49, 48, 49);
+ }
+ .dbo:hover .dbi1{
+     background-color:rgba(0, 0, 0, 0.486);
+ }
+.h1 a{
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:20px;
+   
+ }
+ .h1 a:hover{
+     color:burlywood;
+ }
+ .head{
+    background-image:url(predal_ht3_25.jpg);
+     padding:20px;
+     width:100%;
+     overflow: hidden;
+ }
+ .container1 {
+  position: relative;
+  width: 50%;
+  float: right;
+  height:600px;
+}
+
+.overlay1 {
+  position: absolute;
+  float: right;
+  background-color: #353f42;
+  width:0;
+  height:600px;
+  transition: 1s ease;
+  overflow: hidden;
+}
+
+.container1:hover .overlay1 {
+  width: 100%;
+}
+.container1:hover .txt1{
+    display: block;
+}
+
+.txt1 {
+    position:absolute;
+    height:600px;
+    text-align:justify;
+    font-family:Freestyle Script;color:rgb(255, 255, 255);
+    font-size:30px;   
+    padding:30px;
+    display:none;
+ 
+}
+.container2 {
+  position: relative;
+  width: 50%;
+  float: left;
+  height:600px;
+}
+
+.overlay2{
+  position: absolute;
+  float:left;
+  background-color: #745185;
+  width:0;
+  height:600px;
+  transition: 1s ease;
+  overflow: hidden;
+  left:100%;
+}
+
+.container2:hover .overlay2{
+  width: 100%;
+  left:0;
+}
+.container2:hover .txt2{
+    display: block;
+}
+
+.txt2 {
+    position:absolute;
+    height:600px;
+    text-align:justify;
+    font-family:Freestyle Script;color:rgb(255, 255, 255);
+    font-size:30px;   
+    padding:60px;
+    display:none;
+   
+}
+.container3 {
+  position: relative;
+  width: 50%;
+  float: left;
+  height:600px;
+}
+
+.overlay3{
+  position: absolute;
+  float:left;
+  background-color: #645b0d;
+  width:0;
+  height:600px;
+  transition: 1s ease;
+  overflow: hidden;
+
+}
+
+.container3:hover .overlay3{
+  width: 100%;
+  
+}
+.container3:hover .txt3{
+    display: block;
+}
+
+.txt3 {
+    position:absolute;
+    height:600px;
+    text-align:justify;
+    font-family:Freestyle Script;color:rgb(255, 255, 255);
+    font-size:30px;   
+    padding:60px;
+    display:none;
+   
+}
+.container4 {
+  position: relative;
+  width: 50%;
+  float: left;
+  height:600px;
+}
+
+.overlay4{
+  position: absolute;
+  float:left;
+  background-color: #05520b;
+  width:0;
+  height:600px;
+  transition: 1s ease;
+  overflow: hidden;
+  left:100%;
+}
+
+.container4:hover .overlay4{
+  width: 100%;
+  left:0;
+}
+.container4:hover .txt4{
+    display: block;
+}
+
+.txt4 {
+    position:absolute;
+    height:600px;
+    text-align:justify;
+    font-family:Freestyle Script;color:rgb(255, 255, 255);
+    font-size:30px;   
+    padding:30px;
+    display:none;
+   
+}
+@media screen and (max-width: 700px) {
+  .head .overlay1 .overlay2 .txt1 .container1 .container2 .txt2 .txt3 .txt4
+  .h1{
+    width: 100%; 
+  }
+}
+        </style>
+    </head>
+    <body>
+        <header >
+            <div class='head'>
+            <img src="logohtml.jpg"style="float:center;height:80px;width:90px;border-radius:5px;">
+            <h1 style="color: white;font-family: Verdana, Geneva, Tahoma, sans-serif;margin-bottom:140px;"align='center'>Hotel Transylvania </h1>
+            <span class='h1'>
+            <a href="trans.html" class="button">Home</a>
+            <a href='about.html'>About</a>
+            <a href="gallery.html" class="button">Attractions</a>
+            <a href="#" class="button">Fitness </a>
+            <a href="#" class="button">Tours</a></span>
+            <div class='dbo'>
+                <span class='dbi1' >ROOMS</span>
+                <div class='dbi2' >
+                   <a href="rooms.html" class="button">LUXURY ROOMS</a><br>
+                 <a href="prerooms.html" class="button">PREMIUM ROOMS</a><br>
+                 <a href="sd.html" class="button">SUPER DELUXE DOUBLE ROOM</a><br>
+                </div>
+             </div>
+            </div>   
+            </header>
+            <div class='container1'>
+                <div class='overlay1'>
+                    <div class='txt1'>
+                        <h1>Bran Castle</h1>
+                        Bran Castle is a castle in Bran, 25 kilometres southwest of Brașov.
+                         It is a national monument and landmark in Romania. The fortress is on the
+                          Transylvanian side of the historical border with Wallachia, on road DN73.
+                           Commonly known outside Romania as Dracula's Castle it is often referred to as the home 
+                           of the title character in Bram Stoker's Dracula. There is no evidence that Stoker knew 
+                           anything about this castle, which has only tangential associations with Vlad the Impaler,
+                            voivode of Wallachia, the putative inspiration for Dracula. Stoker's description of Dracula's
+                             crumbling fictional castle also bears no resemblance to Bran Castle. The castle is now a museum 
+                             dedicated to displaying art and furniture collected by Queen Marie. Tourists can see the interior on
+                              their own or by a guided tour. At the bottom of the hill is a small open-air museum exhibiting traditional 
+                              Romanian peasant structures from the Bran region. 
+                    </div>
+                    </div>
+                </div>
+            <div>
+                <img src='unnamed (1).jpg' width='50%' height="600" style="float: left;">               
+            </div>
+            <div class='container2'>
+                <div class='overlay2'>
+                    <div class='txt2'>
+                        <h1>Peleș Castle</h1>
+                        Peleș Castle is a Neo-Renaissance castle in the Carpathian Mountains, near Sinaia,
+                         in Prahova County, Romania, on an existing medieval route linking Transylvania and Wallachia,
+                          built between 1873 and 1914. Its inauguration was held in 1883. It was constructed for King Carol I. 
+
+                    </div>
+                    </div>
+                </div>
+            <div>
+                <img src='Peles-Castle-TravelMaker.jpg' width='50%' height="600" style="float: right;">
+            </div>
+           <div>
+            <img src='Turda-Salt-Mine-0.jpg' width='50%' height="600" style="float:left;">
+           </div>
+           <div class='container3'>
+            <div class='overlay3'>
+                <div class='txt3'>
+                    <h1>Salina Turda</h1>
+                    Salina Turda is a salt mine in the Durgău-Valea Sărată area of Turda,
+                     the second largest city in Cluj County, northwest Romania. Opened for tourists in 1992,
+                      the Salina Turda mine was visited by about 618,000 Romanian and foreign tourists in 2017. Salina 
+                      Turda was ranked in 2013 by Business Insider as among the "25 hidden gems around the world that are
+                       worth the trek".
+                </div>
+                </div>
+            </div>
+            <div><img src='a47cc80931a300e1cdc6779244089e5e.jpg' width='50%' height="600" style="float:right;"></div>
+            <div class='container4'>
+                <div class='overlay4'>
+                    <div class='txt4'>
+                        <h1>The Retezat Mountains</h1>
+                        The Retezat Mountains are one of the highest massifs in Romania, being part of the Southern Carpathians.
+                         The highest peak is Peleaga, at an altitude of 2,509 metres. Other important peaks are Păpușa and Retezat Peak.
+                          The name means "cut off" in Romanian.The tectonic, lithologic and morphologic conditions present in the Retezat mountains, 
+                          correlated with the orientation of the ridges towards the main air masses make this mountain group the most humid area in the Romanian
+                           Carpathians. The hydrologic network is divided into two main directions: north, towards the river Strei (the Mureș drainage basin) where
+                            all the rivers from the west, north and north-east areas of the massif are flowing and south, towards the river Jiul de Vest (the Jiu 
+                            drainage basin). The most important river course is Râul Mare with an annual average flow of 12.9 m3/s. Waterfalls are present on all water
+                             courses in the park.
+
+                    </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <footer>
+                    <hr>
+                    <h3>HOTEL TRANSLVANIYA</h3>
+                    <h3>All rights are reserved(1990-2020)</h3>
+                   
+                       <span><img src="twitter.png" height="40"style="float:right">
+                        <span><img src="telegram.png"height="40"style="float:right"></span> 
+                        <span><img src="linkedin.png"height="40"style="float:right"></span>  
+                        <span><img src="youtube.png"height="40"style="float:right"></span>  
+                </footer>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+int Et,cd,f;
+float Bm,k,Ai,D,Aw,q,d,s,a,s1,Ww,Hw,W,H;
+Et=15;
+cd=3000000;
+D=2;q=250;f=50;k=0.33;Bm=1.1;
+q=250;
+Ai=Et/(Bm*f*4.44);
+Aw=q/(2.22*f*Bm*cd*Ai*k*0.001);
+  printf("Net Core Area=%.4f m^2\n",Ai);
+ printf("Area of the window=%.4f m^2 \n",Aw);
+d=Ai/0.45;
+s=sqrt(d);
+a=d/2;
+s1=sqrt(a);
+printf("Width of the Core=%.4f m\n",s1);
+D=2*s1;
+printf("Distance between centers of the core=%.4f m\n ",D);
+Ww=D-s;
+printf("Width of the window=%.4f m\n",Ww);
+Hw=Aw/Ww;
+printf("Height of the window=%.4f m\n",Hw);
+W=D+s1;
+printf("Width of the Transformer=%.4f m\n",W);
+H=Hw+2*s1;
+printf("Height of the Transformer=%.4f m\n",H);
+printf("\n");printf("\t");
+printf("Dimension of the Transformer= %.4f×",W);
+printf("%.4f",H);
+}
